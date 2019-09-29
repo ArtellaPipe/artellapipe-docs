@@ -1,0 +1,22 @@
+site_name: ArtellaPipe - Docs
+dev_addr: '127.0.0.1:9000'
+sticky_navigation: False
+nav:
+    - Home: index.md
+theme:
+  name: 'material'
+  feature:
+    tabs: true
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji
+  - pymdownx.tasklist
+plugins:
+  - markdownextradata: {}
+extra:
+  project:
+    name: "ArtellaPipe"
+extra_css:
+  - 'stylesheets/artellapipe.css'
