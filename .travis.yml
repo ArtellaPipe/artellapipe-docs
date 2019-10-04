@@ -4,14 +4,14 @@ install:
 script:
   - pip install -r requirements.txt
   - mkdir artellapipe_repos
+  - mkdir artellapipe_docs
   - cd artellapipe_repos
   - git clone https://github.com/ArtellaPipe/artellapipe-utils.git
   - git clone https://github.com/ArtellaPipe/artellapipe-gui.git
   - cd ..
-  - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe
-  - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-gui/artellapipe
-  - sphinx-build -M html ./artellapipe_repos/artellapipe-utils/docs/sphinx ./
-  - sphinx-build -M html ./artellapipe_repos/artellapipe-gui/docs/sphinx ./
+  - sphinx-apidoc -f -e -o artellapipe_docs artellapipe_repos/artellapipe-utils/artellapipe --tocfile artellapipe-utils-modules
+  - sphinx-apidoc -f -e -o artellapipe_docs artellapipe_repos/artellapipe-gui/artellapipe --tocfile artellapipe-gui-modules
+  - sphinx-build -M html ./artellapipe_docs ./
   - cd html && touch .nojekyll && cd ../
 deploy:
   - provider: pages
