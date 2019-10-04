@@ -5,3 +5,5 @@ mkdocs
 mkdocs-material
 pathlib
 mkdocs-markdownextradata-plugin
+sphinx
+sphinx_rtd_theme

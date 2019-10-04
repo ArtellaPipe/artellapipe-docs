@@ -2,12 +2,15 @@ language: python
 install:
 - pip install -r requirements.txt
 script:
+  - pip install -r requirements.txt
   - mkdir artellapipe_repos
   - cd artellapipe_repos
   - git clone https://github.com/ArtellaPipe/artellapipe-utils.git
   - cd artellapipe-utils
-  - sphinx-apidoc -f -e -o docs/sphinx artellapipe
-  - travis-sphinx build --source=docs/sphinx  --nowarn
+  - cd ..
+  - cd ..
+  - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe
+  - travis-sphinx build --source=artellapipe_repos/artellapipe-utils/docs/sphinx  --nowarn
   - cd html
 deploy:
   - provider: pages
