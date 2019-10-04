@@ -12,8 +12,9 @@ script:
   - cd ..
   - sphinx-apidoc -f -e -o docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe --tocfile artellapipe-utils-modules
   - sphinx-apidoc -f -e -o docs/sphinx artellapipe_repos/artellapipe-gui/artellapipe --tocfile artellapipe-gui-modules
-  - sphinx-build -M api ./docs/sphinx ./
-  - cd api && touch .nojekyll && cd ../
+  - sphinx-build -M html ./docs/sphinx ./
+  - cd html && touch .nojekyll && cd ../
+  - mv html api
   - mv api site
 deploy:
   - provider: pages
