@@ -2,7 +2,7 @@ language: python
 install:
 - pip install -r requirements.txt
 script:
-  - make artellapipe_repos
+  - mkdir artellapipe_repos
   - cd artellapipe_repos
   - git clone https://github.com/ArtellaPipe/artellapipe-utils.git
   - cd artellapipe-utils
