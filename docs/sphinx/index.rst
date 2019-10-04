@@ -6,6 +6,7 @@ Welcome to artellapipe-gui documentation!
    :caption: Contents:
 
    modules
+   User Documentation <https://artellapipe.github.io/artellapipe-docs/site>
 
 
 Indices and tables
