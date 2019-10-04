@@ -5,8 +5,7 @@ Welcome to artellapipe-gui documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   artellapipe-gui-modules
-   artellapipe-utils-modules
+   modules
 
 
 Indices and tables
