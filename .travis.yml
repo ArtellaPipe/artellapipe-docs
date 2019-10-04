@@ -6,11 +6,12 @@ script:
   - mkdir artellapipe_repos
   - cd artellapipe_repos
   - git clone https://github.com/ArtellaPipe/artellapipe-utils.git
-  - cd artellapipe-utils
-  - cd ..
+  - git clone https://github.com/ArtellaPipe/artellapipe-gui.git
   - cd ..
   - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe
+  - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-gui/artellapipe
   - sphinx-build -M html ./artellapipe_repos/artellapipe-utils/docs/sphinx ./
+  - sphinx-build -M html ./artellapipe_repos/artellapipe-gui/docs/sphinx ./
   - cd html && touch .nojekyll && cd ../
 deploy:
   - provider: pages
