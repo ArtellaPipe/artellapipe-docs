@@ -10,8 +10,8 @@ script:
   - cd ..
   - cd ..
   - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe
-  - travis-sphinx build --source=artellapipe_repos/artellapipe-utils/docs/sphinx  --nowarn
-  - cd html
+  - sphinx-build -M html ./artellapipe_repos/artellapipe-utils/docs/sphinx
+  - cd html && touch .nojekyll && cd ../
 deploy:
   - provider: pages
     skip_cleanup: true
