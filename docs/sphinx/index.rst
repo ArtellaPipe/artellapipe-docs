@@ -1,4 +1,4 @@
-Welcome to artellapipe-gui documentation!
+Welcome to artellapipe documentation!
 ==============================================
 
 .. toctree::
@@ -6,12 +6,7 @@ Welcome to artellapipe-gui documentation!
    :caption: Contents:
 
    artellapipe-modules
-   |user_documentation_link|
-
-
-.. |user_documentation_link| raw:: html
-
-   <a href="https://artellapipe.github.io/artellapipe-docs/site" target="_blank">User Documentation</a>
+   User Documentation <https://artellapipe.github.io/artellapipe-docs/site>
 
 Indices and tables
 ==================
