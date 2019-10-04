@@ -10,7 +10,7 @@ script:
   - cd ..
   - cd ..
   - sphinx-apidoc -f -e -o artellapipe_repos/artellapipe-utils/docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe
-  - sphinx-build -M html ./artellapipe_repos/artellapipe-utils/docs/sphinx
+  - sphinx-build -M html ./artellapipe_repos/artellapipe-utils/docs/sphinx ./
   - cd html && touch .nojekyll && cd ../
 deploy:
   - provider: pages
