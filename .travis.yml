@@ -2,8 +2,13 @@ language: python
 install:
 - pip install -r requirements.txt
 script:
-- mkdocs build --config-file=docs/mkdocs.yml --verbose --clean
-- mv docs/site .
+  - make artellapipe_repos
+  - cd artellapipe_repos
+  - git clone https://github.com/ArtellaPipe/artellapipe-utils.git
+  - cd artellapipe-utils
+  - sphinx-apidoc -f -e -o docs/sphinx artellapipe
+  - travis-sphinx build --source=docs/sphinx  --nowarn
+  - cd html
 deploy:
   - provider: pages
     skip_cleanup: true
