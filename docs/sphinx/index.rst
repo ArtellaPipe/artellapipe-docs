@@ -5,7 +5,7 @@ Welcome to artellapipe-gui documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   modules
+   artellapipe-modulesmodules
    User Documentation <https://artellapipe.github.io/artellapipe-docs/site>
 
 
