@@ -15,12 +15,11 @@ script:
   - sphinx-build -M html ./docs/sphinx ./
   - cd html && touch .nojekyll && cd ../
   - cd site && touch .nojekyll && cd ../
-  - mv html api
-  - mv api site
+  - mv site html
 deploy:
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
-    local_dir: site
+    local_dir: html
     on:
       branch: master
