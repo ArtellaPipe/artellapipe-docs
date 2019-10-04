@@ -2,9 +2,15 @@ artellapipe
 ===================
 
 .. toctree::
-   :maxdepth: 4
 
     artellapipe.gui
     artellapipe.utils
 
 
+Module contents
+---------------
+
+.. automodule:: artellapipe
+   :members:
+   :undoc-members:
+   :show-inheritance:
