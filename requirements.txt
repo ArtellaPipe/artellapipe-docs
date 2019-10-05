@@ -9,3 +9,4 @@ sphinx
 sphinx_rtd_theme
 artellapipe-utils
 artellapipe-gui
+artellapipe-core

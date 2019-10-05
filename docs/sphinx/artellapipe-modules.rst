@@ -5,6 +5,7 @@ artellapipe
 
     artellapipe.gui
     artellapipe.utils
+    artellapipe.core
 
 
 Module contents
