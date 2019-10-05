@@ -10,10 +10,12 @@ script:
   - git clone https://github.com/ArtellaPipe/artellapipe-utils.git
   - git clone https://github.com/ArtellaPipe/artellapipe-gui.git
   - git clone https://github.com/ArtellaPipe/artellapipe-core.git
+  - git clone https://github.com/ArtellaPipe/artellapipe-launcher.git
   - cd ..
   - sphinx-apidoc -f -e -o docs/sphinx artellapipe_repos/artellapipe-utils/artellapipe --tocfile artellapipe-utils-modules
   - sphinx-apidoc -f -e -o docs/sphinx artellapipe_repos/artellapipe-gui/artellapipe --tocfile artellapipe-gui-modules
   - sphinx-apidoc -f -e -o docs/sphinx artellapipe_repos/artellapipe-core/artellapipe --tocfile artellapipe-core-modules
+  - sphinx-apidoc -f -e -o docs/sphinx artellapipe_repos/artellapipe-launcher/artellapipe --tocfile artellapipe-launcher-modules
   - sphinx-build -M html ./docs/sphinx ./
   - cd html && touch .nojekyll && cd ../
   - cd site && touch .nojekyll && cd ../
