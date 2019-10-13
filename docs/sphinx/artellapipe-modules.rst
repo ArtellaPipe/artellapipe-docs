@@ -6,7 +6,7 @@ artellapipe
     artellapipe.gui
     artellapipe.utils
     artellapipe.core
-    artellapipe.launcher
+    artellapipe_launcher.launcher
 
 
 Module contents

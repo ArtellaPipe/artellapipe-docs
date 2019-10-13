@@ -1,5 +1,5 @@
 # ===================================================================
-# solstice-docs requirements file
+# artellapipe-docs requirements file
 # ===================================================================
 mkdocs
 mkdocs-material
